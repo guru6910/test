@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata: 
+  name: tomcat-deploy
+spec:
+  replicas: 1
+  selector:
+    matchlabels:
+      app: tomcat-app
+  template: 
+    metadata:
+      labels: 
+        app: tomcat-app
+    spec:
+      containers:
+      - name: tomcat-app
+        image: guru6910/guru:v2
+        ports:
+        - containersPort: 18
+    
