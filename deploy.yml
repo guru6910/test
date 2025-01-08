@@ -30,4 +30,3 @@ spec:
     targetPort: 18
     port: 8080
   type: LoadBalancer
-    
