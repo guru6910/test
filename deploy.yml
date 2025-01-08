@@ -5,7 +5,7 @@ metadata:
 spec:
   replicas: 1
   selector:
-    matchlabels:
+    matchLabels:
       app: tomcat-app
   template: 
     metadata:
@@ -16,5 +16,5 @@ spec:
       - name: tomcat-app
         image: guru6910/guru:v2
         ports:
-        - containersPort: 18
+        - containerPort: 18
     
